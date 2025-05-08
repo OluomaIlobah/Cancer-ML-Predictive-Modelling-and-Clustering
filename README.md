@@ -33,6 +33,7 @@ Leukemia (1314), Liver (1263), Ovarian (1259), Pancreatic (1243), Breast (1241)
 Leukemia (660), Liver (630), Breast (614), Ovarian (601), Pancreatic (594)
 
 
+
 **Feature Engineering: Created BMI from Weight and Height**
 
 **II. Statistical Hypothesis Testing**
@@ -48,6 +49,7 @@ Leukemia (660), Liver (630), Breast (614), Ovarian (601), Pancreatic (594)
 - Demographics: Age, Gender, Nationality, Ethnicity
 - Lifestyle: Smoking Status
 - Medical History: Comorbidities, Cancer Type, Weight, Height
+
   
 **Models Trained**
 - Random Forest Classifier
@@ -55,10 +57,12 @@ Leukemia (660), Liver (630), Breast (614), Ovarian (601), Pancreatic (594)
 - Support Vector Classifier (OneVsRest and OneVsOne)
 - XGBoost Classifier
 
+
   
 **Results**
 - Random Forest (with SMOTE): Accuracy = 30% (highest)
 - After tuning: 29%
+
   
 **Top Features (Feature Importance)**
 - Nationality: Expatriate
@@ -66,6 +70,7 @@ Leukemia (660), Liver (630), Breast (614), Ovarian (601), Pancreatic (594)
 - Comorbidities: Unknown
 - Emirate: Fujairah
 - Cancer Type: Ovarian
+
 
   
 **Challenges**
@@ -76,11 +81,13 @@ Low accuracy due to:
 - Sparse high-dimensional encoded features (3138 columns)
 - Possible label noise
 
+
   
 **Recommendations**
 - Collect richer clinical/biological data
 - Apply deeper dimensionality reduction or feature selection
 - Explore non-tabular approaches
+
 
   
 **Clustering Analysis**
@@ -95,12 +102,14 @@ Unsupervised learning to uncover patient subgroups:
 - Davies-Bouldin Index: 2.8964 (high similarity)
 - Calinski-Harabasz Index: 1171.59 (moderate dispersion)
 
+
   
 **PCA Insights**
 
 - PC1: BMI (0.709), Weight (0.622), Height (0.331)
 - PC2: Height (0.649), Weight (0.356)
 - Age had minimal impact
+
 
   
 **Cluster Summary**
@@ -111,6 +120,8 @@ Unsupervised learning to uncover patient subgroups:
 
 **Cluster 0:** Higher BMI/weight, slightly better recovery
 **Cluster 1:** Leaner profile, slightly lower recovery
+
+
 
 **Tools & Technologies Used**
 
